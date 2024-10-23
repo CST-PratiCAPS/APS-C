@@ -8,18 +8,17 @@ int main(void){
     int value = 0;
     while(fscanf(ptrArq, "%i", &value) == 1){
         vet[size++] = value;
-        printf("aa ");
     }
-    printf(vet);
+    insert(0, size);
 }
 
-void insert(char *item, int count){
-   register int a, b; 
-   char t;
-   for(a=1; a<count; a++){
-      t = item[a];
-      for(b=a-1; b>=0 && t<item[b]; b--) 
-         item[b+1] = item[b];
-      item[b+1] = t;
-      }
+void insert(int *vet, int size){
+    register int a, b; 
+    char t;
+    for(a=1; a<size; a++){
+        t = vet[a];
+        for(b=a-1; b>=0 && t<vet[b]; b--) 
+            vet[b+1] = vet[b];
+        vet[b+1] = t;
+    }
 }
