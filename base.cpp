@@ -3,8 +3,7 @@
 #include <time.h>
 
 // Método de ordenação (única parte que será alterada do código original vai ser alguns nomes de varáveis, aqui sendo o VET e SIZE)
-void insert(int *vet, int size)
-{
+void insert(int *vet, int size){
     register int a, b;
     int t;
     for (a = 1; a < size; a++)
@@ -16,6 +15,19 @@ void insert(int *vet, int size)
     }
 }
 
+void quick(){
+    printf("ainda nao disponivel");
+}
+
+void merge(){
+    printf("ainda nao disponivel");
+}
+
+void abb(){
+    printf("ainda nao disponivel");
+}
+
+
 int main(void)
 {
 
@@ -26,11 +38,12 @@ int main(void)
     int dataSize;
     int duplicate;
     int dbForm;
+    int order;
 
     // Abrindo a base de dados
     FILE *ptrArq;
 
-    printf("\nEscolha o tamanho da base que deseja testar:\n1 - 10 dados\n2 - 50 dados\n3-100\n4 - 500 dados\n5 - 1k dados\n6 - 5k dados\n7 - 10k dados\n8 - 50k dados\n9 - 100k dados");
+    printf("\nEscolha o tamanho da base que deseja testar:\n1 - 10 dados\n2 - 50 dados\n3 - 100\n4 - 500 dados\n5 - 1k dados\n6 - 5k dados\n7 - 10k dados\n8 - 50k dados\n9 - 100k dados\n");
     scanf("%d", &dataSize);
     switch (dataSize)
     {
@@ -556,6 +569,7 @@ int main(void)
         }break;
     }
 
+//Teste se o arquivo foi encontrado
     if (ptrArq == NULL)
     {
         printf("Erro ao tentar abrir o arquivo!");
@@ -569,25 +583,42 @@ int main(void)
     }
 
     // Mostrando o vetor desordenado
-    printf("Valores desordenados:\n");
+    printf("\nValores desordenados:----------------------------------------------\n");
     for (int i = 0; i < size; i++)
     {
         printf("%d ", vet[i]);
     }
 
     // Contagem de tempo e ordenação
-    clock_t tempo = clock();
-    insert(vet, size);
-    clock_t tempo2 = clock();
+    printf("\nEscolha o tipo de ordenacao que voce deseja testar:\n1 - InsertionSort\n2 - QuickSort\n3 - MergeSort\n4 - ABBsort\n");
+    scanf("%d", &dataSize);
+  
+    switch (dataSize){
+        case 1:
+            clock_t tempo = clock();
+            insert(vet, size);
+            clock_t tempo2 = clock();
 
-    // Mostrando o vetor ordenado
-    for (int i = 0; i < size; i++)
-    {
-        printf("%d ", vet[i]);
+            // Mostra o tempo gasto
+            float r = tempo2 - tempo;
+            printf("\n%d %d", tempo, tempo2);
+            printf("\nclock: %2.10f", r / CLOCKS_PER_SEC);
+            break;
     }
 
-    // Mostra o tempo gasto
-    float r = tempo2 - tempo;
-    printf("\n%d %d", tempo, tempo2);
-    printf("\nclock: %2.10f", r / CLOCKS_PER_SEC);
+    // Mostrando o vetor ordenado
+    printf("\ndeseja ver o vetor ordenado?\n1 - sim\n0 - nao\n");
+    bool ordvet;
+    scanf("%d", &ordvet);
+    if (ordvet == true){
+        printf("\nVetor ordenado:-----------------------------------------------------------------------------------\n");
+        for (int i = 0; i < size; i++){
+            printf("%d ", vet[i]);
+        }
+    }
+
+    printf("\nPressione ENTER para sair\n");
+    int sair;
+    scanf("%d", &sair);
+    
 }
