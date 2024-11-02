@@ -1,0 +1,179 @@
+Legenda para entender os dados:
+    - tempo de ordenção é literalmente o tempo gasto para fazer a ordenação da base de dados
+    - duplicado: se o usuário escolheu: 1 - ter dados duplicados; 2 - não ter dados duplicados
+    - tamanho da base de dados: qual o tamanho da base de dados o usuário desejou testar com o método, de 1 a 9, sendo:
+        1 - 10 dados
+        2 - 50 dados
+        3 - 100 dados
+        4 - 500 dados
+        5 - 1 mil dados
+        6 - 5 mil dados
+        7 - 10 mil dados
+        8 - 50 mil dados
+        9 - 100 mil dados
+    - formato da base de dados: a forma como os dados brutos da base de dados está, indo de 1 a 5:
+        1 - aleatório
+        2 - concavo (desce e depois sobe)
+        3 - convexo (sobe e depois desce)
+        4 - crescente
+        5 - decrescente
+
+//////////////////////////////////  INSERTION SORT \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+-------------Com 10 dados---------------------------------------------------------------
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 1
+tamanho da base de dados: 1
+formato da base de dados: 1
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 2
+tamanho da base de dados: 1
+formato da base de dados: 1
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 1
+tamanho da base de dados: 1
+formato da base de dados: 2
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 2
+tamanho da base de dados: 1
+formato da base de dados: 2
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 1
+tamanho da base de dados: 1
+formato da base de dados: 3
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 2
+tamanho da base de dados: 1
+formato da base de dados: 3
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 1
+tamanho da base de dados: 1
+formato da base de dados: 4
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 2
+tamanho da base de dados: 1
+formato da base de dados: 4
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 1
+tamanho da base de dados: 1
+formato da base de dados: 5
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 2
+tamanho da base de dados: 1
+formato da base de dados: 5
+
+---------------Com 50 dados----------------------------------
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 1
+tamanho da base de dados: 1
+formato da base de dados: 1
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 2
+tamanho da base de dados: 1
+formato da base de dados: 1
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 1
+tamanho da base de dados: 1
+formato da base de dados: 2
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 2
+tamanho da base de dados: 1
+formato da base de dados: 2
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 1
+tamanho da base de dados: 1
+formato da base de dados: 3
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 2
+tamanho da base de dados: 1
+formato da base de dados: 3
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 1
+tamanho da base de dados: 1
+formato da base de dados: 4
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 2
+tamanho da base de dados: 1
+formato da base de dados: 4
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 1
+tamanho da base de dados: 1
+formato da base de dados: 5
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 2
+tamanho da base de dados: 1
+formato da base de dados: 5
+
+------------Com 100 dados----------------------------------
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 1
+tamanho da base de dados: 1
+formato da base de dados: 1
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 2
+tamanho da base de dados: 1
+formato da base de dados: 1
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 1
+tamanho da base de dados: 1
+formato da base de dados: 2
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 2
+tamanho da base de dados: 1
+formato da base de dados: 2
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 1
+tamanho da base de dados: 1
+formato da base de dados: 3
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 2
+tamanho da base de dados: 1
+formato da base de dados: 3
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 1
+tamanho da base de dados: 1
+formato da base de dados: 4
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 2
+tamanho da base de dados: 1
+formato da base de dados: 4
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 1
+tamanho da base de dados: 1
+formato da base de dados: 5
+
+tempo de ordenação: 0.00000000000000000000
+duplicado: 2
+tamanho da base de dados: 1
+formato da base de dados: 5
+
+-----------Com 500 dados------------------------------------

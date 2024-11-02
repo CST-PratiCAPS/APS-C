@@ -43,6 +43,11 @@ int main(void)
     // Abrindo a base de dados
     FILE *ptrArq;
 
+    // Abrindo o arquivo onde vai salvar as escolhas do usuário e o tempo
+    FILE *saveFile;
+    saveFile = fopen("arquivo.txt", "a");
+    
+
     printf("\nEscolha o tamanho da base que deseja testar:\n1 - 10 dados\n2 - 50 dados\n3 - 100\n4 - 500 dados\n5 - 1k dados\n6 - 5k dados\n7 - 10k dados\n8 - 50k dados\n9 - 100k dados\n");
     scanf("%d", &dataSize);
     switch (dataSize)
@@ -216,7 +221,7 @@ int main(void)
                 break;
 
             case 5:
-                ptrArq = fopen("dtdecre1000uni0.txt", "rb");
+                ptrArq = fopen("dtdecre100uni0.txt", "rb");
                 break;
             }break;
         }break;
@@ -602,23 +607,28 @@ int main(void)
             // Mostra o tempo gasto
             float r = tempo2 - tempo;
             printf("\n%d %d", tempo, tempo2);
-            printf("\nclock: %2.10f", r / CLOCKS_PER_SEC);
-            break;
+            printf("\nclock: %2.20f", r / CLOCKS_PER_SEC);
+            fprintf(saveFile, "\ntempo de ordenação: %2.20f", r);
+
+            // Salvando tempo da ordenação
+            
+        
     }
+   
+    fprintf(saveFile, "\nduplicado: %d", duplicate);
+    fprintf(saveFile, "\ntamanho da base de dados: %d", dataSize);
+    fprintf(saveFile, "\nformato da base de dados: %d\n", dbForm);
 
     // Mostrando o vetor ordenado
     printf("\ndeseja ver o vetor ordenado?\n1 - sim\n0 - nao\n");
+    int vetord;
     bool ordvet;
-    scanf("%d", &ordvet);
+    scanf("%d", &vetord);
+    ordvet = vetord;
     if (ordvet == true){
         printf("\nVetor ordenado:-----------------------------------------------------------------------------------\n");
         for (int i = 0; i < size; i++){
             printf("%d ", vet[i]);
         }
     }
-
-    printf("\nPressione ENTER para sair\n");
-    int sair;
-    scanf("%d", &sair);
-    
 }
