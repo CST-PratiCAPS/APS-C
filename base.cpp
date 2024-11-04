@@ -19,9 +19,47 @@ void quick(){
     printf("ainda nao disponivel");
 }
 
-void merge(){
-    printf("ainda nao disponivel");
+//O método merge irá dividir um array em partes menores para realizar a ordenaçao. E em seguida irá juntar as subpartes em uma parte já ordernada.
+void merge(int arr[], int l, int m, int n){
+int n1 = l - m + 1;
+int n2 = n - m;
+// o l será o indicie inicial da subarray esquerda (do começo até metade vindo pela esquerda), o m será o indice do meio e o n do meio para o final pela direita. 
+
+//como o método utiliza arrays para dividir em partes menores, teremos que criar arrays temporários. Podemos chamar de auxiliares também, pois cada metade estara dentro deles.
+int A[n1], B[n2];
+
+for (int i = 0; i <n1; i++)
+A[i] = arr[l+i];
+for (int o = 0; o < n2; o++)
+B[o] = arr [m + 1 + o];
 }
+// vamos mesclar os arrays temporários de volta. Nessa parte as metades separadas por A e B sao comparadas e ordenadas na ordem correta.
+int i = 0, o = 0, k = 1;
+while (i< n1 && o <n2){
+    if (A[i] <= B[o]){
+        arr[o] = A[i];
+        i++;
+    } else {
+        arr[o] = B[o];
+        o++;
+    }
+    o++;
+}
+//irá copiar os elementos restantes de A
+while (i <n1){
+    arr[k]
+=L[i];
+    i++;
+    k++;
+}
+
+//copiando elementos restantes de B
+while (o < n2){
+    arr[k] = B[o];
+    o++;
+    k++;
+}
+
 
 void abb(){
     printf("ainda nao disponivel");
@@ -597,6 +635,17 @@ int main(void)
         case 1:
             clock_t tempo = clock();
             insert(vet, size);
+            clock_t tempo2 = clock();
+
+            // Mostra o tempo gasto
+            float r = tempo2 - tempo;
+            printf("\n%d %d", tempo, tempo2);
+            printf("\nclock: %2.10f", r / CLOCKS_PER_SEC);
+            break;
+
+        case 4:
+            clock_t tempo = clock();
+            insert(arr[], size);
             clock_t tempo2 = clock();
 
             // Mostra o tempo gasto
