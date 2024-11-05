@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Método de ordenação (única parte que será alterada do código original vai ser alguns nomes de varáveis, aqui sendo o VET e SIZE)
+// M�todo de ordena��o (�nica parte que ser� alterada do c�digo original vai ser alguns nomes de var�veis, aqui sendo o VET e SIZE)
 void insert(int *vet, int size){
     register int a, b;
     int t;
@@ -19,8 +19,43 @@ void quick(){
     printf("ainda nao disponivel");
 }
 
-void merge(){
-    printf("ainda nao disponivel");
+//O m�todo merge ir� dividir um array em partes menores para realizar a ordena�ao. E em seguida ir� juntar as subpartes em uma parte j� ordernada.
+void merge(int *vet, int ini, int med, int end) {
+     int n1 = ini, n2 = med+1, nAux = 0;
+     int* vetAux = new int[end - ini + 1];
+     while(n1<=med && n2<=end){
+		if(vet[n1] <= vet[n2]){
+			vetAux[nAux] = vet[n1];
+			n1++;
+		}else{
+			vetAux[nAux] = vet[n2];
+			n2++; 
+		}
+		nAux++;
+	}
+	while(n1<=med){ 
+		//Caso ainda haja elementos na primeira metade
+		vetAux[nAux] = vet[n1];
+		nAux++;n1++;
+	}
+	while(n2<=end){ 
+		//Caso ainda haja elementos na segunda metade
+		vetAux[nAux] = vet[n2];
+		nAux++;n2++;
+	}
+	for(nAux = 0; nAux < end - ini + 1; nAux++){ 
+		//Move os elementos de volta para o vetor original
+		vet[ini + nAux] = vetAux[nAux];
+	}
+}
+
+void mergeSort(int* vet, int ini, int end){
+    if (ini < end) {
+        int med = (ini+end)/2;
+        mergeSort(vet, ini, med);
+        mergeSort(vet, med+1, end);
+        merge(vet, ini, med, end);
+    }
 }
 
 void abb(){
@@ -31,34 +66,34 @@ void abb(){
 int main(void)
 {
 
-    // Declarando as variáveis
+    // Declarando as vari�veis
     int vet[100000];
     int size = 0;
     int value = 0;
     int dataSize;
     int duplicate;
     int dbForm;
+    int sort;
     int order;
 
     // Abrindo a base de dados
     FILE *ptrArq;
 
-    // Abrindo o arquivo onde vai salvar as escolhas do usuário e o tempo
+// Abrindo o arquivo onde vai salvar as escolhas do usuário e o tempo
     FILE *saveFile;
     saveFile = fopen("arquivo.txt", "a");
-    
 
     printf("\nEscolha o tamanho da base que deseja testar:\n1 - 10 dados\n2 - 50 dados\n3 - 100\n4 - 500 dados\n5 - 1k dados\n6 - 5k dados\n7 - 10k dados\n8 - 50k dados\n9 - 100k dados\n");
     scanf("%d", &dataSize);
     switch (dataSize)
     {
     case 1:
-        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - Não");
+        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - Nao");
         scanf("%d", &duplicate);
         switch (duplicate)
         {
         case 1:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -84,7 +119,7 @@ int main(void)
             }break;
 
         case 2:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -111,12 +146,12 @@ int main(void)
         }break;
 
     case 2:
-        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - Não");
+        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - Nao");
         scanf("%d", &duplicate);
         switch (duplicate)
         {
         case 1:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -142,7 +177,7 @@ int main(void)
             }break;
 
         case 2:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -169,12 +204,12 @@ int main(void)
         }break;
 
     case 3:
-        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - Não");
+        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - N�o");
         scanf("%d", &duplicate);
         switch (duplicate)
         {
         case 1:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -200,7 +235,7 @@ int main(void)
             }break;
 
         case 2:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -221,18 +256,18 @@ int main(void)
                 break;
 
             case 5:
-                ptrArq = fopen("dtdecre100uni0.txt", "rb");
+                ptrArq = fopen("dtdecre1000uni0.txt", "rb");
                 break;
             }break;
         }break;
 
     case 4:
-        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - Não");
+        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - Nao");
         scanf("%d", &duplicate);
         switch (duplicate)
         {
         case 1:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -258,7 +293,7 @@ int main(void)
             }break;
 
         case 2:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -285,12 +320,12 @@ int main(void)
         }break;
 
     case 5:
-        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - Não");
+        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - Nao");
         scanf("%d", &duplicate);
         switch (duplicate)
         {
         case 1:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -316,7 +351,7 @@ int main(void)
             }break;
 
         case 2:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -342,12 +377,12 @@ int main(void)
             }break;
         }break;
     case 6:
-        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - Não");
+        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - Nao");
         scanf("%d", &duplicate);
         switch (duplicate)
         {
         case 1:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -373,7 +408,7 @@ int main(void)
             }break;
 
         case 2:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -400,12 +435,12 @@ int main(void)
         }break;
 
     case 7:
-        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - Não");
+        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - Nao");
         scanf("%d", &duplicate);
         switch (duplicate)
         {
         case 1:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -431,7 +466,7 @@ int main(void)
             }break;
 
         case 2:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -458,12 +493,12 @@ int main(void)
         }break;
 
     case 8:
-        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - Não");
+        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - Nao");
         scanf("%d", &duplicate);
         switch (duplicate)
         {
         case 1:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -489,7 +524,7 @@ int main(void)
             }break;
 
         case 2:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -516,12 +551,12 @@ int main(void)
         }break;
 
     case 9:
-        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - Não");
+        printf("\nDeseja que a base tenha dados repetidos?\n1 - Sim\n2 - Nao");
         scanf("%d", &duplicate);
         switch (duplicate)
         {
         case 1:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -547,7 +582,7 @@ int main(void)
             }break;
 
         case 2:
-            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatória\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
+            printf("\nDeseja que a base de dados em sua forma bruta esteja de forma:\n1 - Aleatoria\n2 - Concava\n3 - Convexa\n4 - Crescente\n5 - Decrescente");
             scanf("%d", &dbForm);
             switch (dbForm)
             {
@@ -588,18 +623,26 @@ int main(void)
     }
 
     // Mostrando o vetor desordenado
-    printf("\nValores desordenados:----------------------------------------------\n");
-    for (int i = 0; i < size; i++)
-    {
-        printf("%d ", vet[i]);
-    }
+    printf("\nDeseja ver a base de dados desordenada?\nY / T - Sim\nN / F - Nao\n");
+    bool verDesordem;
+    char temp;
+    scanf("%s", &temp);
 
-    // Contagem de tempo e ordenação
+    if (temp == 'Y' || temp == 'T') {
+        for (int i = 0; i < size; i++){
+            printf("%d ", vet[i]);
+        }
+    } else {
+        verDesordem = false;
+    }
+    
+
+    // Contagem de tempo e ordena��o
     printf("\nEscolha o tipo de ordenacao que voce deseja testar:\n1 - InsertionSort\n2 - QuickSort\n3 - MergeSort\n4 - ABBsort\n");
-    scanf("%d", &dataSize);
+    scanf("%d", &sort);
   
-    switch (dataSize){
-        case 1:
+    switch (sort){
+        case 1:{
             clock_t tempo = clock();
             insert(vet, size);
             clock_t tempo2 = clock();
@@ -607,28 +650,50 @@ int main(void)
             // Mostra o tempo gasto
             float r = tempo2 - tempo;
             printf("\n%d %d", tempo, tempo2);
-            printf("\nclock: %2.20f", r / CLOCKS_PER_SEC);
+            printf("\nclock: %2.10f", r / CLOCKS_PER_SEC);
+
+            //salvando o tempo de ordenacao
             fprintf(saveFile, "\ntempo de ordenação: %2.20f", r);
 
-            // Salvando tempo da ordenação
-            
-        
+            break;}
+
+        case 3:{
+            clock_t tempo = clock();
+            mergeSort(vet, 0, size - 1);
+            clock_t tempo2 = clock();
+
+            // Mostra o tempo gasto
+            float r = tempo2 - tempo;
+            printf("\n%d %d", tempo, tempo2);
+            printf("\nclock: %2.10f", r / CLOCKS_PER_SEC);
+
+            //salvando o tempo de ordenacao
+            fprintf(saveFile, "\ntempo de ordenação: %2.20f", r);
+
+            break;}
     }
-   
+    //Salvando escolhas do usuario no arquivo.txt, para que seja mais facil de fazer a planilha
+    fprintf(saveFile, "\nmétodo de ordanação: %d", sort);
     fprintf(saveFile, "\nduplicado: %d", duplicate);
     fprintf(saveFile, "\ntamanho da base de dados: %d", dataSize);
     fprintf(saveFile, "\nformato da base de dados: %d\n", dbForm);
 
     // Mostrando o vetor ordenado
-    printf("\ndeseja ver o vetor ordenado?\n1 - sim\n0 - nao\n");
-    int vetord;
+    printf("\ndeseja ver o vetor ordenado?\nY / T - Sim\nN / F - Nao\n");
     bool ordvet;
-    scanf("%d", &vetord);
-    ordvet = vetord;
-    if (ordvet == true){
+    scanf("%s", &temp);
+
+    if (temp == 'Y' || temp == 'T') {
         printf("\nVetor ordenado:-----------------------------------------------------------------------------------\n");
         for (int i = 0; i < size; i++){
             printf("%d ", vet[i]);
         }
+    } else {
+        ordvet = false;
     }
+
+    printf("\nPressione ENTER para sair\n");
+    int sair;
+    scanf("%d", &sair);
+    
 }

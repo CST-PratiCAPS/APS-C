@@ -177,3 +177,8 @@ tamanho da base de dados: 1
 formato da base de dados: 5
 
 -----------Com 500 dados------------------------------------
+
+tempo de ordenação: 3314.00000000000000000000
+duplicado: 1
+tamanho da base de dados: 1
+formato da base de dados: 5
