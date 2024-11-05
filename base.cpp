@@ -672,11 +672,79 @@ int main(void)
 
             break;}
     }
+    
     //Salvando escolhas do usuario no arquivo.txt, para que seja mais facil de fazer a planilha
-    fprintf(saveFile, "\nmétodo de ordanação: %d", sort);
-    fprintf(saveFile, "\nduplicado: %d", duplicate);
-    fprintf(saveFile, "\ntamanho da base de dados: %d", dataSize);
-    fprintf(saveFile, "\nformato da base de dados: %d\n", dbForm);
+    switch (sort){
+    case 1:
+        fprintf(saveFile, "\nmétodo de ordanação: Insertion");
+        break;
+    case 2:
+        fprintf(saveFile, "\nmétodo de ordanação: Quick");
+        break;
+    case 3:
+        fprintf(saveFile, "\nmétodo de ordanação: Merge");
+        break;
+    case 4:
+        fprintf(saveFile, "\nmétodo de ordanação: ABB");
+        break;
+    }
+    
+    switch (duplicate){
+    case 1:
+        fprintf(saveFile, "\nduplicado: Sim");
+        break;
+    case 2:
+        fprintf(saveFile, "\nduplicado: Não");
+        break;
+    }
+    
+    switch (dataSize){
+    case 1:
+        fprintf(saveFile, "\ntamanho da base de dados: 10 dados");
+        break;
+    case 2:
+        fprintf(saveFile, "\ntamanho da base de dados: 50 dados");
+        break;
+    case 3:
+        fprintf(saveFile, "\ntamanho da base de dados: 100 dados");
+        break;
+    case 4:
+        fprintf(saveFile, "\ntamanho da base de dados: 500 dados");
+        break;
+    case 5:
+        fprintf(saveFile, "\ntamanho da base de dados: 1.000 dados");
+        break;
+    case 6:
+        fprintf(saveFile, "\ntamanho da base de dados: 5.000 dados");
+        break;
+    case 7:
+        fprintf(saveFile, "\ntamanho da base de dados: 10.000 dados");
+        break;
+    case 8:
+        fprintf(saveFile, "\ntamanho da base de dados: 50.000 dados");
+        break;
+    case 9:
+        fprintf(saveFile, "\ntamanho da base de dados: 100.000 dados");
+        break;
+    }
+ 
+    switch (dbForm){
+    case 1:
+        fprintf(saveFile, "\nformato da base de dados: Aleatório");
+        break;
+    case 2:
+        fprintf(saveFile, "\nformato da base de dados: Concavo");
+        break;
+    case 3:
+        fprintf(saveFile, "\nformato da base de dados: Covexo");
+        break;
+    case 4:
+        fprintf(saveFile, "\nformato da base de dados: Crescente");
+        break;
+    case 5:
+        fprintf(saveFile, "\nformato da base de dados: Decrescente");
+        break;
+    }
 
     // Mostrando o vetor ordenado
     printf("\ndeseja ver o vetor ordenado?\nY / T - Sim\nN / F - Nao\n");
