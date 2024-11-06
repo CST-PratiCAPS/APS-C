@@ -1,184 +1,545 @@
-Legenda para entender os dados:
-    - tempo de ordenção é literalmente o tempo gasto para fazer a ordenação da base de dados
-    - duplicado: se o usuário escolheu: 1 - ter dados duplicados; 2 - não ter dados duplicados
-    - tamanho da base de dados: qual o tamanho da base de dados o usuário desejou testar com o método, de 1 a 9, sendo:
-        1 - 10 dados
-        2 - 50 dados
-        3 - 100 dados
-        4 - 500 dados
-        5 - 1 mil dados
-        6 - 5 mil dados
-        7 - 10 mil dados
-        8 - 50 mil dados
-        9 - 100 mil dados
-    - formato da base de dados: a forma como os dados brutos da base de dados está, indo de 1 a 5:
-        1 - aleatório
-        2 - concavo (desce e depois sobe)
-        3 - convexo (sobe e depois desce)
-        4 - crescente
-        5 - decrescente
+----------------------------- 10 dados -----------------------------
 
-//////////////////////////////////  INSERTION SORT \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
--------------Com 10 dados---------------------------------------------------------------
-
+formato da base de dados: Aleatorio
 tempo de ordenação: 0.00000000000000000000
-duplicado: 1
-tamanho da base de dados: 1
-formato da base de dados: 1
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 10 dados
 
+formato da base de dados: Aleatorio
 tempo de ordenação: 0.00000000000000000000
-duplicado: 2
-tamanho da base de dados: 1
-formato da base de dados: 1
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 10 dados
 
+formato da base de dados: Concavo
 tempo de ordenação: 0.00000000000000000000
-duplicado: 1
-tamanho da base de dados: 1
-formato da base de dados: 2
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 10 dados
 
+formato da base de dados: Concavo
 tempo de ordenação: 0.00000000000000000000
-duplicado: 2
-tamanho da base de dados: 1
-formato da base de dados: 2
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 10 dados
 
+formato da base de dados: Covexo
 tempo de ordenação: 0.00000000000000000000
-duplicado: 1
-tamanho da base de dados: 1
-formato da base de dados: 3
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 10 dados
 
+formato da base de dados: Covexo
 tempo de ordenação: 0.00000000000000000000
-duplicado: 2
-tamanho da base de dados: 1
-formato da base de dados: 3
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 10 dados
 
+formato da base de dados: Crescente
 tempo de ordenação: 0.00000000000000000000
-duplicado: 1
-tamanho da base de dados: 1
-formato da base de dados: 4
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 10 dados
 
+formato da base de dados: Crescente
 tempo de ordenação: 0.00000000000000000000
-duplicado: 2
-tamanho da base de dados: 1
-formato da base de dados: 4
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 10 dados
 
+formato da base de dados: Decrescente
 tempo de ordenação: 0.00000000000000000000
-duplicado: 1
-tamanho da base de dados: 1
-formato da base de dados: 5
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 10 dados
 
+formato da base de dados: Decrescente
 tempo de ordenação: 0.00000000000000000000
-duplicado: 2
-tamanho da base de dados: 1
-formato da base de dados: 5
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 10 dados
 
----------------Com 50 dados----------------------------------
+----------------------------- 50 dados -----------------------------
 
+formato da base de dados: Aleatorio
 tempo de ordenação: 0.00000000000000000000
-duplicado: 1
-tamanho da base de dados: 1
-formato da base de dados: 1
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 50 dados
 
+formato da base de dados: Aleatorio
 tempo de ordenação: 0.00000000000000000000
-duplicado: 2
-tamanho da base de dados: 1
-formato da base de dados: 1
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 50 dados
 
+formato da base de dados: Concavo
 tempo de ordenação: 0.00000000000000000000
-duplicado: 1
-tamanho da base de dados: 1
-formato da base de dados: 2
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 50 dados
 
+formato da base de dados: Concavo
 tempo de ordenação: 0.00000000000000000000
-duplicado: 2
-tamanho da base de dados: 1
-formato da base de dados: 2
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 50 dados
 
+formato da base de dados: Covexo
 tempo de ordenação: 0.00000000000000000000
-duplicado: 1
-tamanho da base de dados: 1
-formato da base de dados: 3
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 50 dados
 
+formato da base de dados: Covexo
 tempo de ordenação: 0.00000000000000000000
-duplicado: 2
-tamanho da base de dados: 1
-formato da base de dados: 3
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 50 dados
 
+formato da base de dados: Crescente
 tempo de ordenação: 0.00000000000000000000
-duplicado: 1
-tamanho da base de dados: 1
-formato da base de dados: 4
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 50 dados
 
+formato da base de dados: Crescente
 tempo de ordenação: 0.00000000000000000000
-duplicado: 2
-tamanho da base de dados: 1
-formato da base de dados: 4
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 50 dados
 
+formato da base de dados: Decrescente
 tempo de ordenação: 0.00000000000000000000
-duplicado: 1
-tamanho da base de dados: 1
-formato da base de dados: 5
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 50 dados
 
+formato da base de dados: Decrescente
 tempo de ordenação: 0.00000000000000000000
-duplicado: 2
-tamanho da base de dados: 1
-formato da base de dados: 5
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 50 dados
 
-------------Com 100 dados----------------------------------
+----------------------------- 100 dados -----------------------------
 
+formato da base de dados: Aleatorio
 tempo de ordenação: 0.00000000000000000000
-duplicado: 1
-tamanho da base de dados: 1
-formato da base de dados: 1
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 100 dados
 
+formato da base de dados: Aleatorio
 tempo de ordenação: 0.00000000000000000000
-duplicado: 2
-tamanho da base de dados: 1
-formato da base de dados: 1
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 100 dados
 
+formato da base de dados: Concavo
 tempo de ordenação: 0.00000000000000000000
-duplicado: 1
-tamanho da base de dados: 1
-formato da base de dados: 2
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 100 dados
 
+formato da base de dados: Concavo
 tempo de ordenação: 0.00000000000000000000
-duplicado: 2
-tamanho da base de dados: 1
-formato da base de dados: 2
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 100 dados
 
+formato da base de dados: Covexo
 tempo de ordenação: 0.00000000000000000000
-duplicado: 1
-tamanho da base de dados: 1
-formato da base de dados: 3
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 100 dados
 
+formato da base de dados: Covexo
 tempo de ordenação: 0.00000000000000000000
-duplicado: 2
-tamanho da base de dados: 1
-formato da base de dados: 3
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 100 dados
 
+formato da base de dados: Crescente
 tempo de ordenação: 0.00000000000000000000
-duplicado: 1
-tamanho da base de dados: 1
-formato da base de dados: 4
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 100 dados
 
+formato da base de dados: Crescente
 tempo de ordenação: 0.00000000000000000000
-duplicado: 2
-tamanho da base de dados: 1
-formato da base de dados: 4
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 100 dados
 
+formato da base de dados: Decrescente
 tempo de ordenação: 0.00000000000000000000
-duplicado: 1
-tamanho da base de dados: 1
-formato da base de dados: 5
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 100 dados
 
+formato da base de dados: Decrescente
 tempo de ordenação: 0.00000000000000000000
-duplicado: 2
-tamanho da base de dados: 1
-formato da base de dados: 5
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 100 dados
 
------------Com 500 dados------------------------------------
+----------------------------- 500 dados -----------------------------
 
-tempo de ordenação: 3314.00000000000000000000
-duplicado: 1
-tamanho da base de dados: 1
-formato da base de dados: 5
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 500 dados
+
+----------------------------- 1.000 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00100000004749745131
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00100000004749745131
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00200000009499490261
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00100000004749745131
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 1.000 dados
+
+----------------------------- 5.000 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.01400000043213367462
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.01600000075995922089
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.01300000026822090149
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.01499999966472387314
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.01600000075995922089
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.01400000043213367462
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.03299999982118606567
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.03200000151991844177
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 5.000 dados
+
+----------------------------- 10.000 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.06599999964237213135
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.06199999898672103882
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.06100000068545341492
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.06300000101327896118
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.06199999898672103882
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.05999999865889549255
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.11999999731779098511
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.11999999731779098511
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 10.000 dados
+
+----------------------------- 50.000 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 1.48699998855590820312
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 1.43799996376037597656
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 1.44099998474121093750
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 1.40999996662139892578
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 1.44400000572204589844
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 1.53100001811981201172
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00100000004749745131
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00100000004749745131
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 2.84200000762939453125
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 2.95000004768371582031
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 50.000 dados
+
+----------------------------- 100.000 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 5.77899980545043945312
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 5.94099998474121093750
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 5.67799997329711914062
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 5.94000005722045898438
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 5.89900016784667968750
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 6.01900005340576171875
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 11.85000038146972656250
+método de ordenação: Insertion
+duplicado: Sim
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 11.75199985504150390625
+método de ordenação: Insertion
+duplicado: Não
+tamanho da base de dados: 100.000 dados

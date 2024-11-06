@@ -83,7 +83,7 @@ int main(void)
     FILE *saveFile;
     saveFile = fopen("arquivo.txt", "a");
 
-    printf("\nEscolha o tamanho da base que deseja testar:\n1 - 10 dados\n2 - 50 dados\n3 - 100\n4 - 500 dados\n5 - 1k dados\n6 - 5k dados\n7 - 10k dados\n8 - 50k dados\n9 - 100k dados\n");
+    printf("\nEscolha o tamanho da base que deseja testar:\n1 - 10 dados\n2 - 50 dados\n3 - 100 dados\n4 - 500 dados\n5 - 1k dados\n6 - 5k dados\n7 - 10k dados\n8 - 50k dados\n9 - 100k dados\n");
     scanf("%d", &dataSize);
     switch (dataSize)
     {
@@ -256,7 +256,7 @@ int main(void)
                 break;
 
             case 5:
-                ptrArq = fopen("dtdecre1000uni0.txt", "rb");
+                ptrArq = fopen("dtdecre100uni0.txt", "rb");
                 break;
             }break;
         }break;
@@ -622,115 +622,9 @@ int main(void)
         vet[size++] = value;
     }
 
-    // Mostrando o vetor desordenado
-    printf("\nDeseja ver a base de dados desordenada?\nY / T - Sim\nN / F - Nao\n");
-    bool verDesordem;
-    char temp;
-    scanf("%s", &temp);
-
-    if (temp == 'Y' || temp == 'T') {
-        for (int i = 0; i < size; i++){
-            printf("%d ", vet[i]);
-        }
-    } else {
-        verDesordem = false;
-    }
-    
-
-    // Contagem de tempo e ordena��o
-    printf("\nEscolha o tipo de ordenacao que voce deseja testar:\n1 - InsertionSort\n2 - QuickSort\n3 - MergeSort\n4 - ABBsort\n");
-    scanf("%d", &sort);
-  
-    switch (sort){
-        case 1:{
-            clock_t tempo = clock();
-            insert(vet, size);
-            clock_t tempo2 = clock();
-
-            // Mostra o tempo gasto
-            float r = tempo2 - tempo;
-            printf("\n%d %d", tempo, tempo2);
-            printf("\nclock: %2.10f", r / CLOCKS_PER_SEC);
-
-            //salvando o tempo de ordenacao
-            fprintf(saveFile, "\ntempo de ordenação: %2.20f", r);
-
-            break;}
-
-        case 3:{
-            clock_t tempo = clock();
-            mergeSort(vet, 0, size - 1);
-            clock_t tempo2 = clock();
-
-            // Mostra o tempo gasto
-            float r = tempo2 - tempo;
-            printf("\n%d %d", tempo, tempo2);
-            printf("\nclock: %2.10f", r / CLOCKS_PER_SEC);
-
-            //salvando o tempo de ordenacao
-            fprintf(saveFile, "\ntempo de ordenação: %2.20f", r);
-
-            break;}
-    }
-    
-    //Salvando escolhas do usuario no arquivo.txt, para que seja mais facil de fazer a planilha
-    switch (sort){
-    case 1:
-        fprintf(saveFile, "\nmétodo de ordanação: Insertion");
-        break;
-    case 2:
-        fprintf(saveFile, "\nmétodo de ordanação: Quick");
-        break;
-    case 3:
-        fprintf(saveFile, "\nmétodo de ordanação: Merge");
-        break;
-    case 4:
-        fprintf(saveFile, "\nmétodo de ordanação: ABB");
-        break;
-    }
-    
-    switch (duplicate){
-    case 1:
-        fprintf(saveFile, "\nduplicado: Sim");
-        break;
-    case 2:
-        fprintf(saveFile, "\nduplicado: Não");
-        break;
-    }
-    
-    switch (dataSize){
-    case 1:
-        fprintf(saveFile, "\ntamanho da base de dados: 10 dados");
-        break;
-    case 2:
-        fprintf(saveFile, "\ntamanho da base de dados: 50 dados");
-        break;
-    case 3:
-        fprintf(saveFile, "\ntamanho da base de dados: 100 dados");
-        break;
-    case 4:
-        fprintf(saveFile, "\ntamanho da base de dados: 500 dados");
-        break;
-    case 5:
-        fprintf(saveFile, "\ntamanho da base de dados: 1.000 dados");
-        break;
-    case 6:
-        fprintf(saveFile, "\ntamanho da base de dados: 5.000 dados");
-        break;
-    case 7:
-        fprintf(saveFile, "\ntamanho da base de dados: 10.000 dados");
-        break;
-    case 8:
-        fprintf(saveFile, "\ntamanho da base de dados: 50.000 dados");
-        break;
-    case 9:
-        fprintf(saveFile, "\ntamanho da base de dados: 100.000 dados");
-        break;
-    }
- 
     switch (dbForm){
     case 1:
-        fprintf(saveFile, "\nformato da base de dados: Aleatório");
+        fprintf(saveFile, "\nformato da base de dados: Aleatorio");
         break;
     case 2:
         fprintf(saveFile, "\nformato da base de dados: Concavo");
@@ -746,13 +640,118 @@ int main(void)
         break;
     }
 
+    // Mostrando o vetor desordenado
+    printf("\nDeseja ver a base de dados desordenada?\nY / T - Sim\nN / F - Nao\n");
+    bool verDesordem;
+    char temp;
+    scanf("%s", &temp);
+
+
+    if (temp == 'Y' || temp == 'T') {
+        for (int i = 0; i < size; i++){
+            printf("%d ", vet[i]);
+        }
+    } else {
+        verDesordem = false;
+    }
+
+    // Contagem de tempo e ordena��o
+    printf("\nEscolha o tipo de ordenacao que voce deseja testar:\n1 - InsertionSort\n2 - QuickSort\n3 - MergeSort\n4 - ABBsort\n");
+    scanf("%d", &sort);
+  
+    switch (sort){
+        case 1:{
+            clock_t tempo = clock();
+            insert(vet, size);
+            clock_t tempo2 = clock();
+
+            // Mostra o tempo gasto
+            float r = tempo2 - tempo;
+            printf("\n%d %d", tempo, tempo2);
+            printf("\nclock: %2.20f", r / CLOCKS_PER_SEC);
+
+            //salvando o tempo de ordenacao
+            fprintf(saveFile, "\ntempo de ordenação: %2.20f", r / CLOCKS_PER_SEC);
+
+            break;}
+
+        case 3:{
+            clock_t tempo = clock();
+            mergeSort(vet, 0, size - 1);
+            clock_t tempo2 = clock();
+
+            // Mostra o tempo gasto
+            float r = tempo2 - tempo;
+            printf("\n%d %d", tempo, tempo2);
+            printf("\nclock: %2.20f", r / CLOCKS_PER_SEC);
+
+            //salvando o tempo de ordenacao
+            fprintf(saveFile, "\ntempo de ordenação: %2.20f", r);
+
+            break;}
+    }
+    
+    //Salvando escolhas do usuario no arquivo.txt, para que seja mais facil de fazer a planilha
+    switch (sort){
+    case 1:
+        fprintf(saveFile, "\nmétodo de ordenação: Insertion");
+        break;
+    case 2:
+        fprintf(saveFile, "\nmétodo de ordenação: Quick");
+        break;
+    case 3:
+        fprintf(saveFile, "\nmétodo de ordenação: Merge");
+        break;
+    case 4:
+        fprintf(saveFile, "\nmétodo de ordenação: ABB");
+        break;
+    }
+    
+    switch (duplicate){
+    case 1:
+        fprintf(saveFile, "\nduplicado: Sim");
+        break;
+    case 2:
+        fprintf(saveFile, "\nduplicado: Não");
+        break;
+    }
+    
+    switch (dataSize){
+    case 1:
+        fprintf(saveFile, "\ntamanho da base de dados: 10 dados\n");
+        break;
+    case 2:
+        fprintf(saveFile, "\ntamanho da base de dados: 50 dados\n");
+        break;
+    case 3:
+        fprintf(saveFile, "\ntamanho da base de dados: 100 dados\n");
+        break;
+    case 4:
+        fprintf(saveFile, "\ntamanho da base de dados: 500 dados\n");
+        break;
+    case 5:
+        fprintf(saveFile, "\ntamanho da base de dados: 1.000 dados\n");
+        break;
+    case 6:
+        fprintf(saveFile, "\ntamanho da base de dados: 5.000 dados\n");
+        break;
+    case 7:
+        fprintf(saveFile, "\ntamanho da base de dados: 10.000 dados\n");
+        break;
+    case 8:
+        fprintf(saveFile, "\ntamanho da base de dados: 50.000 dados\n");
+        break;
+    case 9:
+        fprintf(saveFile, "\ntamanho da base de dados: 100.000 dados\n");
+        break;
+    }
+
     // Mostrando o vetor ordenado
     printf("\ndeseja ver o vetor ordenado?\nY / T - Sim\nN / F - Nao\n");
     bool ordvet;
     scanf("%s", &temp);
 
     if (temp == 'Y' || temp == 'T') {
-        printf("\nVetor ordenado:-----------------------------------------------------------------------------------\n");
         for (int i = 0; i < size; i++){
             printf("%d ", vet[i]);
         }
@@ -763,5 +762,4 @@ int main(void)
     printf("\nPressione ENTER para sair\n");
     int sair;
     scanf("%d", &sair);
-    
 }
