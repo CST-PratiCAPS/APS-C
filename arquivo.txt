@@ -543,3 +543,573 @@ tempo de ordenação: 11.75199985504150390625
 método de ordenação: Insertion
 duplicado: Não
 tamanho da base de dados: 100.000 dados
+
+////////////////////////////// Merge Sort \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+----------------------------- 10 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 10 dados
+
+----------------------------- 50 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 50 dados
+
+----------------------------- 100 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 100 dados
+
+----------------------------- 500 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 500 dados
+
+----------------------------- 1.000 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00100000004749745131
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00100000004749745131
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 1.000 dados
+
+----------------------------- 5.000 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00200000009499490261
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00200000009499490261
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00100000004749745131
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00100000004749745131
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00100000004749745131
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00100000004749745131
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00200000009499490261
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00100000004749745131
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00100000004749745131
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00100000004749745131
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 5.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00100000004749745131
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 5.000 dados
+
+----------------------------- 10.000 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00200000009499490261
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00200000009499490261
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00200000009499490261
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00200000009499490261
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00200000009499490261
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00100000004749745131
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00200000009499490261
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00200000009499490261
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00200000009499490261
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 10.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00200000009499490261
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 10.000 dados
+
+----------------------------- 50.000 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00999999977648258209
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.01099999994039535522
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00700000021606683731
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00999999977648258209
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00800000037997961044
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00800000037997961044
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00800000037997961044
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00800000037997961044
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00700000021606683731
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 50.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00800000037997961044
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 50.000 dados
+
+----------------------------- 100.000 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.02800000086426734924
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.02600000053644180298
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.01499999966472387314
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.01499999966472387314
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.01600000075995922089
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.01499999966472387314
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.01600000075995922089
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.01799999922513961792
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.01499999966472387314
+método de ordenação: Merge
+duplicado: Sim
+tamanho da base de dados: 100.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.01600000075995922089
+método de ordenação: Merge
+duplicado: Não
+tamanho da base de dados: 100.000 dados
+
+////////////////////////////// Quick Sort \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+----------------------------- 10 dados -----------------------------

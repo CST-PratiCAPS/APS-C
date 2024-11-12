@@ -15,8 +15,26 @@ void insert(int *vet, int size){
     }
 }
 
-void quick(){
-    printf("ainda nao disponivel");
+void Qs (int *vet, int left, int right){
+    register int i, j;
+    int x, y;
+    i = left; j = right;
+    x = vet[(left + right)/2];
+    do{
+        while(vet[i] < x && i < right) i++;
+        while(x < vet[j] && j > left) j--;
+        if(i <= j){
+            y = vet[i];
+            vet[i] = vet[j];
+            vet[j] = y;
+            i++; j--;
+        }
+    } while (i <= j);
+    if(left < j) Qs (vet, left, j);
+    if(i < right) Qs (vet, i, right);
+}
+void quick (int *vet, int size){
+    Qs(vet, 0, size -1);
 }
 
 //O m�todo merge ir� dividir um array em partes menores para realizar a ordena�ao. E em seguida ir� juntar as subpartes em uma parte j� ordernada.
@@ -675,6 +693,17 @@ int main(void)
 
             break;}
 
+        case 2:{
+            clock_t tempo = clock();
+            quick(vet, size);
+            clock_t tempo2 = clock();
+
+            // Mostra o tempo gasto
+            float r = tempo2 - tempo;
+            printf("\n%d %d", tempo, tempo2);
+            printf("\nclock: %2.20f", r / CLOCKS_PER_SEC);
+        }
+
         case 3:{
             clock_t tempo = clock();
             mergeSort(vet, 0, size - 1);
@@ -686,7 +715,7 @@ int main(void)
             printf("\nclock: %2.20f", r / CLOCKS_PER_SEC);
 
             //salvando o tempo de ordenacao
-            fprintf(saveFile, "\ntempo de ordenação: %2.20f", r);
+            fprintf(saveFile, "\ntempo de ordenação: %2.20f", r / CLOCKS_PER_SEC);
 
             break;}
     }
