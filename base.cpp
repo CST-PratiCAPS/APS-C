@@ -76,10 +76,6 @@ void mergeSort(int* vet, int ini, int end){
     }
 }
 
-void abb(){
-    printf("ainda nao disponivel");
-}
-
 
 int main(void)
 {
@@ -674,7 +670,7 @@ int main(void)
     }
 
     // Contagem de tempo e ordena��o
-    printf("\nEscolha o tipo de ordenacao que voce deseja testar:\n1 - InsertionSort\n2 - QuickSort\n3 - MergeSort\n4 - ABBsort\n");
+    printf("\nEscolha o tipo de ordenacao que voce deseja testar:\n1 - InsertionSort\n2 - QuickSort\n3 - MergeSort\n");
     scanf("%d", &sort);
   
     switch (sort){
