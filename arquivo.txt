@@ -1113,3 +1113,313 @@ tamanho da base de dados: 100.000 dados
 ////////////////////////////// Quick Sort \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 ----------------------------- 10 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 10 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 10 dados
+
+----------------------------- 50 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 50 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 50 dados
+
+----------------------------- 100 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 100 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 100 dados
+
+----------------------------- 500 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 500 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 500 dados
+
+----------------------------- 1.000 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Concavo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Covexo
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Crescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 1.000 dados
+
+formato da base de dados: Decrescente
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Não
+tamanho da base de dados: 1.000 dados
+
+----------------------------- 5.000 dados -----------------------------
+
+formato da base de dados: Aleatorio
+tempo de ordenação: 0.00000000000000000000
+método de ordenação: Quick
+duplicado: Sim
+tamanho da base de dados: 5.000 dados

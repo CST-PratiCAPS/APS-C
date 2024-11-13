@@ -702,7 +702,10 @@ int main(void)
             float r = tempo2 - tempo;
             printf("\n%d %d", tempo, tempo2);
             printf("\nclock: %2.20f", r / CLOCKS_PER_SEC);
-        }
+            
+             //salvando o tempo de ordenacao
+            fprintf(saveFile, "\ntempo de ordenação: %2.20f", r / CLOCKS_PER_SEC);
+            break;}
 
         case 3:{
             clock_t tempo = clock();
